@@ -1,0 +1,33 @@
+.customers {
+  padding: 20px 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  min-width: 600px;
+  background-color: white;
+  height: 460px !important;
+}
+
+.customers div h2{
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  background-color: rgb(230, 227, 227);
+}
+
+.rendering-zone {
+  text-align: left !important;
+}
+
+.MuiDataGrid-root .MuiDataGrid-colCellWrapper {
+  color: white;
+  font-weight: bold;
+  background-color: #245dce;
+  font-size: large;
+}
+
+.MuiDataGrid-root .MuiDataGrid-iconSeparator {
+  color: #245dce !important;
+}

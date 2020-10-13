@@ -1,0 +1,27 @@
+.lineChart {
+  padding: 10px 10px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  min-width: 600px;
+  margin-right: 8%;
+  margin-left: 8%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  background-color: white;
+}
+
+.lineChart h2 {
+  text-align: left;
+  margin: 0px 0px;
+  padding: 10px 30px;
+  background-color: rgb(230, 227, 227);
+}
+
+@media only screen and (max-width: 769px) {
+  .lineChart {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
