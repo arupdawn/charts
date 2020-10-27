@@ -9,7 +9,7 @@
   height: 460px !important;
 }
 
-.customers div h2{
+.customers div h2 {
   text-align: left;
   margin-top: 0px;
   margin-bottom: 10px;
@@ -22,6 +22,7 @@
 }
 
 .MuiDataGrid-root .MuiDataGrid-colCellWrapper {
+  z-index: -1 !important;
   color: white;
   font-weight: bold;
   background-color: #245dce;

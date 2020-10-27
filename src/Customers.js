@@ -16,12 +16,8 @@ function Customers({db}) {
     let date = new Date(customer.created);
     let day = date.toUTCString();
     return {
-      id: customer.id,
-      firstName: customer.firstName,
-      lastName: customer.lastName,
-      email: customer.email,
+      ...customer,
       created: day,
-      orders: customer.orders,
     };
   });
 

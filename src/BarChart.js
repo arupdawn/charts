@@ -8,16 +8,16 @@ function BarChart({db}) {
   let newData = db.customers.map((customer) => {
     let day = customer.created.slice(0, 10);
     return {
-      id: customer.id,
-      firstName: customer.firstName,
-      email: customer.email,
-      created: day,
-      orders: customer.orders,
+      ...customer,
+      created: day
     };
   });
+
+  //console.log("NewData >> ", newData[0]);
   
   let groups;
   groups = _.groupBy(newData, "created");
+  //console.log("groups >> ", groups);
   let result = _.map(groups, function (value, key) {
     return {
       date: key,
@@ -35,7 +35,7 @@ function BarChart({db}) {
   let newDate = result.sort((a,b)=>{
     return new Date(a.date) - new Date(b.date)
   });
-  //console.log("newDate data >>", newDate);
+  console.log("newDate data >>", newDate);
   
   let newLabels=[],newOrders=[];
   newDate.forEach(element => {
@@ -98,7 +98,7 @@ function BarChart({db}) {
         fontSize: 18,
       },
       legend: {
-        display: true,
+        display: false, //or true
         position: "top",
       },
     },

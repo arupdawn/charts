@@ -16,7 +16,7 @@
   -webkit-box-shadow: 0px 3px 11px 0px rgba(115, 111, 115, 0.62);
   -moz-box-shadow: 0px 3px 11px 0px rgba(115, 111, 115, 0.62);
   box-shadow: 0px 3px 11px 0px rgba(115, 111, 115, 0.62);
-  z-index: 2;
+  z-index: 100;
 }
 
 .app__barChart {

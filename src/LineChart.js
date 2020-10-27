@@ -8,10 +8,8 @@ function LineChart({db}) {
   let newData = db.orders.map((order) => {
     let day = order.created.slice(0, 10);
     return {
-      id: order.id,
+      ...order,
       created: day,
-      customer: order.customer,
-      product: order.product,
       price: Number(order.price)
     };
   });
@@ -96,7 +94,7 @@ function LineChart({db}) {
         fontSize: 17,
       },
       legend: {
-        display: true,
+        display: false,
         position: "top",
       },
     },
