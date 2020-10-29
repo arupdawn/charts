@@ -3,7 +3,7 @@ import "./BarChart.css";
 import { Bar } from "react-chartjs-2";
 import * as _ from "lodash";
 
-function BarChart({db}) {
+function BarChart({db, startDate, endDate}) {
 
   let newData = db.customers.map((customer) => {
     let day = customer.created.slice(0, 10);
@@ -12,6 +12,10 @@ function BarChart({db}) {
       created: day
     };
   });
+
+  let newDateArr = [];
+
+  
 
   //console.log("NewData >> ", newData[0]);
   
@@ -39,7 +43,7 @@ function BarChart({db}) {
   
   let newLabels=[],newOrders=[];
   newDate.forEach(element => {
-    newLabels.push(element.date.slice(8,10));
+    newLabels.push(element.date.slice(0,10));
     newOrders.push(element.orders);
   });
 
