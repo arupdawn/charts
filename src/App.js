@@ -6,7 +6,7 @@ import Customers from "./Customers";
 
 function App() {
   let db = require("./db.json");
-  //console.log("db data >>", db); {process.env.NODE_ENV}
+  //console.log("db data >>", db); {process.env.NODE_ENV} new feature added
 
   return (
     <div className="app">
